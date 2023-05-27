@@ -18,33 +18,37 @@ const Navbar = ({ setIsOpen, handleOpenMenu }) => {
   }, []);
 
   return (
-    <nav className="navbar-mobile flex justify-between md:justify-around py-4 dark:bg-slate-700 text-white">
+    <nav className="navbar-mobile sticky top-0 z-10 flex justify-between items-center md:justify-around py-4 bg-orange-400 text-white">
       <div className="mdView hidden md:block">
         <ul className="flex flex-row w-96 items-center justify-around">
           <li>
-            <a href="" className="font-semibold">
+            <a href="#aboutSection" className="font-semibold relative group">
+              <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
               About Me
             </a>
           </li>
           <li>
-            <a href="#" className="font-semibold">
+            <a
+              href="#myProjectsSection"
+              className="font-semibold relative group"
+            >
+              <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
               My Projects
             </a>
           </li>
           <li>
-            <a href="#" className="font-semibold">
+            <a href="#mySkillsSection" className="font-semibold relative group">
+              <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
               My Skills
             </a>
           </li>
         </ul>
       </div>
       <div className="ml-4 ">
-        <Button variant="contained" color="success">
-          Download CV
-        </Button>
+        <Button variant="contained">Download CV</Button>
       </div>
       <div
-        className="hamburger float-right space-y-1.5 cursor-pointer flex flex-col justify-center items-center mr-4 p-2 border-2 rounded-md border-slate-500 hover:bg-slate-400 md:hidden"
+        className="hamburger float-right space-y-1.5 cursor-pointer flex flex-col justify-center items-center mr-4 p-2 border-2 rounded-md border-slate-100 hover:bg-orange-500 md:hidden"
         onClick={handleOpenMenu}
         onChange={handleClickOutside}
         ref={dropdownRef}
