@@ -45,7 +45,7 @@ const Navbar = ({ setIsOpen, handleOpenMenu }) => {
         </ul>
       </div>
       <div className="ml-4 ">
-        <a href="/files/BertCV.pdf" download>
+        <a href="/files/BertCVPDF.pdf" download>
           <Button variant="contained">Download CV</Button>
         </a>
       </div>
