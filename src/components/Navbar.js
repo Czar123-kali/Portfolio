@@ -45,10 +45,12 @@ const Navbar = ({ setIsOpen, handleOpenMenu }) => {
         </ul>
       </div>
       <div className="ml-4 ">
-        <Button variant="contained">Download CV</Button>
+        <a href="/files/BertCV.pdf" download>
+          <Button variant="contained">Download CV</Button>
+        </a>
       </div>
       <div
-        className="hamburger float-right space-y-1.5 cursor-pointer flex flex-col justify-center items-center mr-4 p-2 border-2 rounded-md border-slate-100 hover:bg-orange-500 md:hidden"
+        className="hamburger float-right space-y-1.5 cursor-pointer flex flex-col justify-center items-center mr-4 p-2 border-2 rounded-md border-slate-100 hover:bg-orange-300 md:hidden"
         onClick={handleOpenMenu}
         onChange={handleClickOutside}
         ref={dropdownRef}
