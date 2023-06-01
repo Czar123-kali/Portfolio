@@ -12,6 +12,7 @@ import { ReactComponent as SpringbootIcon } from "../svgs/springbootsvg.svg";
 import { ReactComponent as TailwindIcon } from "../svgs/tailwindsvg.svg";
 import { ReactComponent as ReactIcon } from "../svgs/react.svg";
 import { ReactComponent as JavaIcon } from "../svgs/javasvg.svg";
+import { ReactComponent as MySqlIcon } from "../svgs/mysqlsvg.svg";
 
 import { ReactComponent as PhpIcon } from "../svgs/phpsvg.svg";
 
@@ -123,6 +124,7 @@ const Projects = () => {
               <JavascriptIcon className="w-6 h-6 md:w-10 md:h-10" />
               <SpringbootIcon className="w-6 h-6 md:w-10 md:h-10" />
               <JavaIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <MySqlIcon className="w-6 h-6 md:w-10 md:h-10" />
               <GitIcon className="w-6 h-6 md:w-10 md:h-10" />
             </div>
           </div>
