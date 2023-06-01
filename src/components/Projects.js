@@ -1,10 +1,17 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import StockPortfolioPicture from "../StockPortfolio.png";
+import StockPortfolioPicture2 from "../StockPortfolio2.png";
+import StockPortfolioPicture3 from "../StockPortfolioPicture3.png";
 import { ReactComponent as BootstrapIcon } from "../svgs/bootstrap.svg";
 import { ReactComponent as CSSIcon } from "../svgs/css3.svg";
 import { ReactComponent as GitIcon } from "../svgs/git.svg";
 import { ReactComponent as HTMLIcon } from "../svgs/html.svg";
+import { ReactComponent as GitHubIcon } from "../svgs/githubsvg.svg";
+import { ReactComponent as SpringbootIcon } from "../svgs/springbootsvg.svg";
+import { ReactComponent as TailwindIcon } from "../svgs/tailwindsvg.svg";
+import { ReactComponent as ReactIcon } from "../svgs/react.svg";
+import { ReactComponent as JavaIcon } from "../svgs/javasvg.svg";
 
 import { ReactComponent as PhpIcon } from "../svgs/phpsvg.svg";
 
@@ -47,9 +54,7 @@ const Projects = () => {
           <div className="cardLeftSide text-md md:text-xl order-2 md:order-1 w-full flex flex-col px-4 gap-8">
             <div className="projectTitle font-bold">
               <h2>
-                <span className="text-orange-500">
-                  Stock Market Personal Wallet
-                </span>
+                <span className="text-orange-500">Social Media Platform</span>
               </h2>
             </div>
             <div className="projectDescription">
@@ -77,7 +82,11 @@ const Projects = () => {
                 className="rounded-lg"
               />
             </div>
-            <div className="projectLinks"></div>
+            <div className="projectLinks flex justify-center pt-4">
+              <a href="https://github.com/Czar123-kali/PHPProject">
+                <GitHubIcon className="w-12 h-12" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -98,9 +107,12 @@ const Projects = () => {
             </div>
             <div className="projectDescription">
               <h4>
-                The goal of this project was to create a fully functional app
-                that allows the user to fetch data from stocks they purchased
-                and receive real-time P&L data updates
+                The goal of this project was try and create a Twitter-esque full
+                stack website using Spring Boot. We used the Spring Boot MVC
+                model. The website also has user authentication with validation
+                in the website. We are able to post and comment on other users
+                post and make CRUD operations for your own posts and your
+                profile.
               </h4>
             </div>
             <div className="skillsUsed flex flex-row gap-1 items-center">
@@ -108,20 +120,25 @@ const Projects = () => {
               <BootstrapIcon className="w-6 h-6 md:w-10 md:h-10" />
               <HTMLIcon className="w-6 h-6 md:w-10 md:h-10" />
               <CSSIcon className="w-6 h-6 md:w-10 md:h-10" />
-              <PhpIcon className="w-6 h-6 md:w-10 md:h-10" />
-              <GitIcon className="w-6 h-6 md:w-10 md:h-10" />
               <JavascriptIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <SpringbootIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <JavaIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <GitIcon className="w-6 h-6 md:w-10 md:h-10" />
             </div>
           </div>
           <div className="cardRightSide order-1 md:order-1 w-full px-4 pb-6 md:pb-0">
             <div className="projectImage">
               <img
-                src={StockPortfolioPicture}
-                alt="Stock Wallet Project"
+                src={StockPortfolioPicture2}
+                alt="Social Media Clone"
                 className="rounded-lg"
               />
             </div>
-            <div className="projectLinks"></div>
+            <div className="projectLinks flex justify-center pt-4">
+              <a href="https://github.com/shuwenju/Springboot-Thymeleaf-Project">
+                <GitHubIcon className="w-12 h-12" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -135,37 +152,40 @@ const Projects = () => {
           <div className="cardLeftSide text-md md:text-xl order-2 md:order-1 w-full flex flex-col px-4 gap-8">
             <div className="projectTitle font-bold">
               <h2>
-                <span className="text-orange-500">
-                  Stock Market Personal Wallet
-                </span>
+                <span className="text-orange-500">React Fitness App</span>
               </h2>
             </div>
             <div className="projectDescription">
               <h4>
-                The goal of this project was to create a fully functional app
-                that allows the user to fetch data from stocks they purchased
-                and receive real-time P&L data updates
+                This app uses React to display a web app to help provide user's
+                ideal calories intake, ask user his fitness goals, give user a
+                calorie calculator using an external API and exercise
+                recommendations depending on their goals.
               </h4>
             </div>
             <div className="skillsUsed flex flex-row gap-1 items-center">
               <h1>Stack | </h1>
-              <BootstrapIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <TailwindIcon className="w-6 h-6 md:w-10 md:h-10" />
               <HTMLIcon className="w-6 h-6 md:w-10 md:h-10" />
               <CSSIcon className="w-6 h-6 md:w-10 md:h-10" />
-              <PhpIcon className="w-6 h-6 md:w-10 md:h-10" />
-              <GitIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <ReactIcon className="w-6 h-6 md:w-10 md:h-10" />
               <JavascriptIcon className="w-6 h-6 md:w-10 md:h-10" />
+              <GitIcon className="w-6 h-6 md:w-10 md:h-10" />
             </div>
           </div>
           <div className="cardRightSide order-1 md:order-2 w-full px-4 pb-6 md:pb-0">
             <div className="projectImage">
               <img
-                src={StockPortfolioPicture}
+                src={StockPortfolioPicture3}
                 alt="Stock Wallet Project"
                 className="rounded-lg"
               />
             </div>
-            <div className="projectLinks"></div>
+            <div className="projectLinks flex justify-center pt-4">
+              <a href="https://github.com/shuwenju/Springboot-Thymeleaf-Project">
+                <GitHubIcon className="w-12 h-12" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
