@@ -1,26 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@mui/material";
 
-const Navbar = ({ setIsOpen, handleOpenMenu }) => {
+const Navbar = ({ isOpen, setIsOpen, handleOpenMenu }) => {
   const dropdownRef = useRef(null);
 
   const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsOpen(false);
+    if (dropdownRef.current) {
+      setIsOpen(!isOpen);
     }
   };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <nav className="navbar-mobile sticky top-0 z-10 flex justify-between items-center md:justify-around py-4 bg-orange-400 text-white">
       <div className="mdView hidden md:block">
-        <ul className="flex flex-row w-96 items-center justify-around">
+        <ul className="flex flex-row w-96 items-center justify-between">
           <li>
             <a href="#aboutSection" className="font-semibold relative group">
               <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
@@ -40,6 +33,15 @@ const Navbar = ({ setIsOpen, handleOpenMenu }) => {
             <a href="#mySkillsSection" className="font-semibold relative group">
               <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
               My Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contactMeSection"
+              className="font-semibold relative group"
+            >
+              <span className="absolute block h-0.5 w-0 bg-white top-6 transition-all duration-300 group-hover:w-full"></span>
+              Contact Me
             </a>
           </li>
         </ul>

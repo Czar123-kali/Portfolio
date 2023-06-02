@@ -5,7 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Me from "../me2.jpeg";
 import { IoIosArrowDown } from "react-icons/io";
 
-const About = ({ isOpen }) => {
+const About = ({ isOpen, setIsOpen }) => {
   const [moreInfo, setMoreInfo] = useState("false");
   const arrowButton = useRef(null);
 
@@ -15,7 +15,7 @@ const About = ({ isOpen }) => {
 
   return (
     <section className="relative font">
-      <ModalView isOpen={isOpen} />
+      <ModalView isOpen={isOpen} setIsOpen={setIsOpen} />
       <section
         id="aboutSection"
         className="px-6 flex h-fit md:h-screen pt-24 md:pt-0 dark:bg-slate-700 dark:text-white flex-col justify-center items-center md:flex-row bg-slate-50"

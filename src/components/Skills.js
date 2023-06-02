@@ -1,5 +1,4 @@
 import React from "react";
-import StockPortfolioPicture from "../StockPortfolio.png";
 import { ReactComponent as BootstrapIcon } from "../svgs/bootstrap.svg";
 import { ReactComponent as CSSIcon } from "../svgs/css3.svg";
 import { ReactComponent as GithubSvgIcon } from "../svgs/githubsvg.svg";
@@ -16,7 +15,6 @@ import { ReactComponent as MongoIcon } from "../svgs/mongodb.svg";
 import { ReactComponent as CSharpIcon } from "../svgs/csharp.svg";
 import { ReactComponent as NodeIcon } from "../svgs/nodejs.svg";
 import { ReactComponent as ExpressIcon } from "../svgs/express.svg";
-import { GitHub } from "@mui/icons-material";
 
 const Skills = () => {
   return (

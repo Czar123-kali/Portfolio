@@ -55,7 +55,9 @@ const Projects = () => {
           <div className="cardLeftSide text-md md:text-xl order-2 md:order-1 w-full flex flex-col px-4 gap-8">
             <div className="projectTitle font-bold">
               <h2>
-                <span className="text-orange-500">Social Media Platform</span>
+                <span className="text-orange-500">
+                  Stock Market Personal Wallet
+                </span>
               </h2>
             </div>
             <div className="projectDescription">
@@ -101,9 +103,7 @@ const Projects = () => {
           <div className="cardLeftSide text-md md:text-xl order-2 md:order-2 w-full flex flex-col px-4 gap-8">
             <div className="projectTitle font-bold">
               <h2>
-                <span className="text-orange-500">
-                  Stock Market Personal Wallet
-                </span>
+                <span className="text-orange-500">Social Media Platform</span>
               </h2>
             </div>
             <div className="projectDescription">
@@ -133,7 +133,7 @@ const Projects = () => {
               <img
                 src={StockPortfolioPicture2}
                 alt="Social Media Clone"
-                className="rounded-lg"
+                className="rounded-lg  w-full"
               />
             </div>
             <div className="projectLinks flex justify-center pt-4">
